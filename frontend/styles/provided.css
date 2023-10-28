@@ -1,0 +1,159 @@
+
+/* base styles, feel free to edit */
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+footer {
+    position: fixed;
+    right: 40px;
+    bottom: 10px;
+}
+
+#logout-button{
+    position: fixed;
+    right: 40px;
+    top: 10px;
+    height: fit-content;
+}
+
+#banner {
+    padding: 30px 40px;
+    color: rgb(0, 63, 136);
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-register{
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+#page-login{
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+
+#page-dashboard {
+    height: 100%;
+}
+
+#channel-info{
+    background-color: #f8f8f8;
+    width: 380px;
+    height: 100vh;
+}
+
+#channel-board{
+    width: 380px;
+    height: 100vh;
+}
+
+#page-channel{
+    overflow: hidden;
+}
+
+#chat-module {
+    height: 100vh;
+}
+
+#chat-box {
+    overflow-y: scroll;
+}
+
+#pinned-module {
+    height: 100vh;
+}
+
+#pinned-box {
+    overflow-y: scroll;
+}
+
+.btn-full-height {
+    height: 100%;
+}
+
+#channels-list{
+    overflow-y: scroll;
+}
+
+.hidden{
+    display: none;
+}
+
+.custom-link-color {
+    color: #001764;
+}
+
+.custom-link-color:hover {
+    text-decoration: underline;
+    color: #FF8D66; 
+}
+
+.toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#display-image{
+    max-width: 45vw;
+    max-height: 70vh;
+}
+
+
+/* #add-channel-pop{
+    z-index: 1000;
+} */
+/* setup the detail of screen size smaller than 768 */
+@media (max-width: 768px) {
+    #page-register{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #page-login{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #channel-info{
+        background-color: #f8f8f8;
+        width: 100%;
+        height: 25vh;
+    }
+    
+    #chat-module {
+        height: 35vh;
+    }
+
+    #pinned-module {
+        height: 35vh;
+    }
+    .btn-full-width {
+        width: 100%;
+    }
+    #logout-button{
+        position: inherit;
+    }
+
+
+}

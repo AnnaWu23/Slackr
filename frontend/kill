@@ -1,0 +1,4 @@
+#!/bin/bash
+if lsof -t -i :$1 > /dev/null ; then
+    kill -9 $(lsof -t -i :$1)
+fi
