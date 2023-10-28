@@ -1,0 +1,2 @@
+#!/bin/dash
+npx -c-1 http-server frontend -p 9090
